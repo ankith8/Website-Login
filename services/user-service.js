@@ -10,7 +10,6 @@ exports.addUser = function(user, next) {
     var newUser = new User({
       firstName: user.firstName,
       lastName: user.lastName,
-      roomNumber: user.roomNumber,
       email: user.email.toLowerCase(),
       password: hash
     });
